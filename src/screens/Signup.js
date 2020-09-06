@@ -111,3 +111,28 @@ export default function Signup({ navigation }) {
     </SafeAreaView>
   );
 }
+
+// const validationSchema = yup.object().shape({
+//   email: yup.string().label("Email").email().required(),
+//   password: yup
+//     .string()
+//     .label("Password")
+//     .required()
+//     .min(2, "Seems a bit short")
+//     .max(10, "Try shorter password"),
+//   agreeToTerms: yup
+//     .boolean()
+//     .label("Terms")
+//     .test(
+//       "is-true",
+//       "Must agree to terms to continue",
+//       (value) => value === true
+//     ),
+//   confirmPassword: yup
+//     .string()
+//     .required()
+//     .label("Confirm Password")
+//     .test("password-match", "Password must match ya fool", function (value) {
+//       return this.parent.password === value;
+//     }),
+// });
